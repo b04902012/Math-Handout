@@ -1,0 +1,62 @@
+\pagestyle{plain}
+\documentclass[12pt]{extreport}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{hyperref}
+\usepackage{calrsfs}
+\usepackage{fontspec,xunicode}
+\usepackage{fontenc}
+\usepackage{titlesec}
+\usepackage{amsmath} 
+\usepackage{amsfonts} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xeCJK}
+\usepackage{listings}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{mathtools}
+\usepackage{indentfirst}
+\usepackage{amssymb}
+\usepackage{ragged2e}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\setCJKmainfont{AR PL UKai TW}
+\lstset{basicstyle=\ttfamily,xleftmargin=24pt}
+\titleformat{\section}[hang]{\normalfont\LARGE\bfseries}{\thesection}{0.5em}{}
+\titleformat{\subsection}[hang]{\normalfont\large\bfseries}{　\thesubsection}{0.5em}{}
+\setlength\parindent{24pt}
+\setcounter{section}{-1}
+\newcommand{\nequiv}{\not\equiv}
+\newcommand{\Ih}{\hat{I}}
+\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+\newcommand{\Gc}{\pazocal{G}}
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{0pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{0pt}
+\linespread{1.2}
+\setlength{\parskip}{0.5\baselineskip}
+\begin{document}
+\begin{center}
+	\Huge{勉強算是講義的東西}\\ 
+	\huge{Handsome Liu}\\ 
+	\huge{2016.09.26}\\ 
+\end{center}
+\chapter{數與式}
+    姑且解釋一下這章的標題：數跟式是兩個分開的東西。數是一個值，儘管它不一定是真實存在的，比方說我們會因為方便而想像出虛數，但它是一個具體而固定的值；而式裡面則可能出現一些不是數的文字，而這些文字可以用數代入。藉由把數代入文字，我們便賦予了式子一個特定的值。\\
+    \section{數}
+        如同前面說的，數是一個值。根據這些值的特性，有以下幾個重要的數的集合：自然數(\(\mathbb{N}\))、整數(\(\mathbb{Z}\))、有理數(\(\mathbb{Q}\))、無理數、實數(\(\mathbb{R}\))、複數(\(\mathbb{C}\))。\\
+        \subsection{自然數}
+            自然數就是正整數。至於正整數...就是正整數XD。難以簡潔的定義它。當然自然數在數學上是有嚴謹的定義的：\\
+            \begin{mdframed}
+            \(1\)是自然數。\\
+            對於每一個自然數\(n\)，\(n+1\)也是自然數。\\
+            ...\\
+            \end{mdframed}
+            以上就是鼎鼎大名的皮亞諾公設，嚴謹的定義了自然數。不過反正不會考，所以當科普看過就好XD。當然我會提到這件事情是有原因的：它跟我們稍後會談到的數學歸納法息息相關。這兩個之間的關聯性等等再來聊。\\
+            這一類的數之所以會自成一個集合，是因為他是人類在日常生活中首先需要面對的一種數。由於英文是 Natural Numbers 的關係，我們用符號\(\mathbb{N}\)來表示這個集合。\\
+        \subsection{整數}
+            整數就是自然數、負的自然數、跟\(0\)。儘管整數的英文是 Integers ，數學上是用\(\mathbb{Z}\)來表示。據說是因為德文的整數是 Zahlen ，天知道為什麼不用\(\mathbb{I}\)，反正數學家都怪怪的。\\
+        \subsection{有理數}
+            有理數就有比較多東西可以拿來講了。首先，有理數是整數的比值。意思是說，一個數是\(q\)有理數，若且唯若有正整數\(m\)、\(n\)使得\(q=\dfrac{m}{n}\)。換句話說，有理數完完全全由整數建構出來，但整數是離散的，而有理數是稠密的。\\
+            我們可以從很多方面來解讀有理數的稠密性。
+\end{document}　
